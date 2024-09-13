@@ -12,7 +12,7 @@ namespace Practica02.Repository
 {
     public class ArticuloRepository : IAplicacion
     {
-        const string CNN_STRING = "Server=localhost;Database=facturacion;User Id=SA;Password=Klapaucius1;TrustServerCertificate=True;";
+        const string CNN_STRING = "Server=localhost;Database={database}};User Id={userName};Password={userPass};TrustServerCertificate=True;";
 
         public void Agregar(CrearArticuloDto articulo)
         {
